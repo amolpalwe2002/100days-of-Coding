@@ -11,7 +11,9 @@ public class Day02 {
             if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u'){
                 System.out.println(ch+" is vowel.");
             }else System.out.println(ch +" is a consonant.");
-        }else System.out.println("Enter valid input!");
+        }else System.out.println("Enter valid input!"); 
+
+        sc.close();
         
         
     }
