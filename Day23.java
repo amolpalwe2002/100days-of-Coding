@@ -1,9 +1,8 @@
-//Prime Number in a given Range
-//no. that is only divisible by 1 or itself
+//Program to express a Number as a Sum of Two Prime numbers
 
 import java.util.*;
 
-public class Day21 {
+public class Day23 {
 
     static boolean isPrime(int n){
         if(n==0 || n==1) System.out.println("Neither PRIME nor composite");
@@ -17,18 +16,17 @@ public class Day21 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int lower = sc.nextInt();
-        int upper = sc.nextInt();
+        int n=sc.nextInt();
 
-        for(int i=lower; i<=upper; i++){
+        for(int i=2; i<n; i++){
 
-            if(isPrime(i)) System.out.print(i+" ");
-            // else System.out.println("NOT PRIME");
+            if(isPrime(i) && isPrime(n-i)){
+                System.out.println(i+" "+(n-i));
+                // break;
+            }
+            // else System.out.println("No numbers found");
 
         }
-
-        
-
 
         sc.close();
     }
