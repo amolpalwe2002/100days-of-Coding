@@ -8,19 +8,19 @@ public class Day37 {
 
         String str = sc.nextLine();
 
-        // //Approach 01
-        // String str1="";
+        //Approach 01
+        String str1="";
         
-        // for(int i=0; i<str.length(); i++){
-        //     if(i==0) str1+=Character.toUpperCase(str.charAt(i));                
-        //     else if(i==str.length()-1) str1+=Character.toUpperCase(str.charAt(i));           
-        //     else if(str.charAt(i+1)==' ') str1+=Character.toUpperCase(str.charAt(i));               
-        //     else if(str.charAt(i-1)==' ') str1+=Character.toUpperCase(str.charAt(i));
-        //     else str1+=str.charAt(i);
+        for(int i=0; i<str.length(); i++){
+            if(i==0) str1+=Character.toUpperCase(str.charAt(i));                
+            else if(i==str.length()-1) str1+=Character.toUpperCase(str.charAt(i));           
+            else if(str.charAt(i+1)==' ') str1+=Character.toUpperCase(str.charAt(i));               
+            else if(str.charAt(i-1)==' ') str1+=Character.toUpperCase(str.charAt(i));
+            else str1+=str.charAt(i);
             
-        // }
+        }
 
-        // System.out.println(str1);
+        System.out.println(str1);
 
         sc.close();
     }
